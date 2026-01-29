@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@supabase/supabase-js": "^2.93.3",
+    "use-sound": "^5.0.0"
+  }
+}
