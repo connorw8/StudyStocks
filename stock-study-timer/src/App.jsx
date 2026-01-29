@@ -350,8 +350,11 @@ export default function StudyTrader() {
                   </div>
                   <div className="text-right">
                     <div className={`font-mono text-xl font-bold transition-colors ${isProfit ? theme.accent : 'text-rose-400'}`}>{formatMoney(portfolioValue)}</div>
-                    {isRunning && <div className={`text-[11px] font-mono font-bold opacity-80 ${isProfit ? theme.accent : 'text-rose-400'}`}>{isProfit ? '+' : ''}{formatMoney(sessionProfit)}</div>}
-                  </div>
+                    {isRunning && (
+                      <div className={`text-[11px] font-mono font-bold opacity-80 ${isProfit ? theme.accent : 'text-rose-400'}`}>
+                        {isProfit ? '+' : ''}{formatMoney(sessionProfit)} ({isProfit ? '+' : ''}{sessionProfitPct.toFixed(2)}%)
+                      </div>
+                    )}                  </div>
                 </div>
 
                 <div className="h-64 relative bg-black/20">
