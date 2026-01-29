@@ -313,7 +313,7 @@ export default function StudyTrader() {
             <div className="flex items-center gap-3">
               <div className={`${theme.btn} p-2 rounded-lg text-slate-950 shadow-lg transition-colors`}><TrendingUp size={20} strokeWidth={3} /></div>
               <div>
-                <h1 className="font-bold text-lg text-white leading-none">Study Trader</h1>
+                <h1 className="font-bold text-lg text-white leading-none">Study Stocks</h1>
                 <div className="flex items-center gap-1 mt-1 opacity-50 uppercase text-[9px] font-black tracking-widest">
                   {userRank.icon} {userRank.title}
                 </div>
